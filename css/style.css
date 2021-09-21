@@ -74,6 +74,11 @@
           filter: invert(1);
   mix-blend-mode: multiply;
 }
+@media (min-width: 800px) {
+  ._dark .main__mask {
+    opacity: 0.99;
+  }
+}
 @media (any-hover: hover) {
   ._dark .facebook:hover {
     color: #2a63ff;

@@ -14,9 +14,12 @@
   --white: #333;
 
   .main__mask {
-    isolation: isolate;
     filter: invert(1);
     mix-blend-mode: multiply;
+
+    @media (min-width: 800px) {
+      opacity: 0.99;
+    }
   }
 
   .facebook {
