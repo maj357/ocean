@@ -70,10 +70,8 @@
   --white: #333;
 }
 ._dark .main__mask {
-  isolation: isolate;
   -webkit-filter: invert(1);
           filter: invert(1);
-  opacity: 0.99;
   mix-blend-mode: multiply;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
@@ -242,9 +240,6 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  opacity: 0.99;
-  -webkit-filter: invert(0);
-          filter: invert(0);
   mix-blend-mode: screen;
 }
 .main__title {
