@@ -70,7 +70,6 @@
   --white: #333;
 }
 ._dark .main__mask {
-  isolation: isolate;
   -webkit-filter: invert(1);
           filter: invert(1);
   mix-blend-mode: multiply;
