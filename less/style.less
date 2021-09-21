@@ -16,9 +16,7 @@
   .main__mask {
     isolation: isolate;
     filter: invert(1);
-    opacity: 0.99;
     mix-blend-mode: multiply;
-    transition: all 1s ease 0s;
   }
 
   .facebook {
@@ -40,7 +38,7 @@
   z-index: 999;
 
   @media (max-width:768px) {
-    padding: 20px 30px;
+    padding: 20px 20px;
   }
 
   &__logo {
@@ -60,8 +58,8 @@
 
   &__buttons {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,10 +165,7 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    transition: all 1s ease 0s;
     user-select: none;
-    opacity: 0.99;
-    filter: invert(0);
     mix-blend-mode: screen; // делает область картинки экраном для видео
   }
 
@@ -190,11 +185,12 @@
     font-weight: 500;
     font-size: 19px;
     color: var(--black);
+
     @media (max-width:550px) {
       left: 50%;
-      transform: translate(-50%,0%);
+      transform: translate(-50%, 0%);
       white-space: nowrap;
-      bottom: 30px;
+      bottom: 20px;
     }
   }
 
@@ -213,8 +209,8 @@
 
     @media (max-width:550px) {
       right: 50%;
-      transform: translate(50%,0%);
-      bottom: 60px;
+      transform: translate(50%, 0%);
+      bottom: 50px;
     }
 
     &-item {
@@ -267,7 +263,7 @@
 .navigation {
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -275,10 +271,12 @@
   align-items: center;
   background-color: var(--white);
   z-index: 10;
+  transform: translate(-125%, 0px);
   transition: all 0.5s ease 0s;
 
   &._active {
-    left: 0;
+    transform: translate(0%, 0px);
+    transition: all 0.5s ease 0s;
   }
 
   &__list {
